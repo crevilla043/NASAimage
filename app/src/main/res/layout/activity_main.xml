@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#557FD1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yyyy-mm-dd"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/btnFetchImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Image" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/tvImageUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HD Image URL"
+            android:textColor="@android:color/holo_blue_dark"
+            android:visibility="gone"
+            android:paddingTop="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/btnSaveImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Image"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnViewSavedImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Saved Images" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
